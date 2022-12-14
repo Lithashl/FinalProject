@@ -4,6 +4,7 @@ Reference : https://www.youtube.com/watch?v=OdWEhPyp5_o&t=102s
 
 1. Casting / Conversion 
 2. Constructor
+https://github.com/Lithashl/FinalProject/blob/a5a7b3110a6938359e393068ad69a73d83f8a677/src/main/Main.java#L5-L10
 3. Overloading 
 4.Overriding
 5. Encapsulation
