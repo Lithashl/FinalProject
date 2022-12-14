@@ -11,9 +11,10 @@ https://github.com/Lithashl/FinalProject/blob/56a4bae2cc0804b583b46684752b4ac54a
 https://github.com/Lithashl/FinalProject/blob/a5a7b3110a6938359e393068ad69a73d83f8a677/src/main/Main.java#L7-L10
 
 3. Overloading 
-https://github.com/Lithashl/FinalProject/blob/276a1c6c89fdcc523c026e6313c6b3cbfb6f56d7/src/game/data/type/attr/Body.java#L81-L83
+https://github.com/Lithashl/FinalProject/blob/56a4bae2cc0804b583b46684752b4ac54a706641/src/game/data/type/unit/SmartAircraft.java#L50-L53
 
 4.Overriding
+https://github.com/Lithashl/FinalProject/blob/276a1c6c89fdcc523c026e6313c6b3cbfb6f56d7/src/game/data/type/attr/Body.java#L81-L83
 
 5. Encapsulation
 https://github.com/Lithashl/FinalProject/blob/431d2ec194469faf22eadb683e44be1c51062f26/src/game/device/Display.java#L115-L141
@@ -36,6 +37,8 @@ https://github.com/Lithashl/FinalProject/blob/0b92a14c129f7f1bf66bc6f22d44af6b03
 
 15. Generics
 16. Collection
-
+https://github.com/Lithashl/FinalProject/blob/27dfb55cd30488c9346ed25a7a53f2a55bb234c1/src/game/data/type/unit/BasicLivingUnit.java#L27-L49
 18. Input / Output
+https://github.com/Lithashl/FinalProject/blob/27dfb55cd30488c9346ed25a7a53f2a55bb234c1/src/game/GameManager.java#L149-L219
+
 
