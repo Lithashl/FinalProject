@@ -72,12 +72,12 @@ public class Area implements Serializable {
         return BasicAttr.less(right, x);
     }
 
-    public void move(double x, double y) { // 移动指定距离
+    public void move(double x, double y) { 
         top += y; bottom += y;
         left += x; right += x;
     }
 
-    public void moveAsCenter(double x, double y) { // 移动至以指定位置为中心点
+    public void moveAsCenter(double x, double y) { 
         double width = (right - left) / 2.0;
         double height = (bottom - top) / 2.0;
 
