@@ -38,7 +38,7 @@ public class ControllableAircraft extends BasicLivingUnit {
         super.autoAct(timePassed, keyMap, unitMap);
 
         if(keyMap[KeyEvent.VK_W]) {
-            if((this.keyStatus & (1 << 3)) == 0) {					// 此刻之前向上未处于被按下状态
+            if((this.keyStatus & (1 << 3)) == 0) {					
                 this.keyStatus = this.keyStatus | (1 << 3);
                 this.setMovingUp();
             }
@@ -46,7 +46,7 @@ public class ControllableAircraft extends BasicLivingUnit {
             if((this.keyStatus & (1 << 3)) > 0) {
                 this.keyStatus = this.keyStatus & (~(1 << 3));
                 this.stopMovingUp();
-                if((this.keyStatus & (1 << 2)) > 0) {					// 如果当前向下处于被按下状态
+                if((this.keyStatus & (1 << 2)) > 0) {					
                     this.setMovingDown();
                 }
             }
