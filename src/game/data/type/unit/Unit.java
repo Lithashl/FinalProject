@@ -16,15 +16,15 @@ public abstract class Unit implements Copy, Comparable<Unit>, Serializable {
         return serialVersionUID;
     }
 
-    protected boolean frozen;									// 是否暂停
-    protected Body mainBody;									// 身体
-    protected Status blood;										// 血量
-    protected Status speed;										// 速度
-    protected int camp;											// 阵营
+    protected boolean frozen;									
+    protected Body mainBody;									
+    protected Status blood;										
+    protected Status speed;										
+    protected int camp;											
 
-    protected boolean shouldDeleted;							// 自身是否应当被删除
+    protected boolean shouldDeleted;							
 
-    protected ArrayList<Unit> unitGenerated;						// 产生的目标
+    protected ArrayList<Unit> unitGenerated;						
 
     public Unit() {
         super();
@@ -102,39 +102,39 @@ public abstract class Unit implements Copy, Comparable<Unit>, Serializable {
         }
     }
 
-    // 碰撞检测阶段方法
-    public abstract void initCollitionStatus();							// 初始化碰撞状态
-    public abstract boolean canDetectCollision();						// 是否可检测碰撞
+  
+    public abstract void initCollitionStatus();							
+    public abstract boolean canDetectCollision();						
     public abstract void adjustSelf(Unit unit, HashMap<String, Unit> unitMap);
     // 根据指定单位调整自身
-    public abstract boolean collisionDetected(Unit unit);				// 是否与指定单位发生了碰撞
-    public abstract void collisionHappened(Unit unit);					// 处理与指定单位的碰撞
+    public abstract boolean collisionDetected(Unit unit);				
+    public abstract void collisionHappened(Unit unit);					
 
-    public abstract boolean isTarget();									// 是否是可击中目标，可击中目标之间和可击中目标和子弹之间可碰撞
-    public abstract boolean isBullet();									// 是否是子弹，子弹之间不发生碰撞
+    public abstract boolean isTarget();									
+    public abstract boolean isBullet();									
 
-    // 自动计算阶段方法
-    public abstract void autoMove(double timePassed, Area border);		// 自动处理移动
+
+    public abstract void autoMove(double timePassed, Area border);		
     public abstract void autoAct(double timePassed, boolean[] keyMap, HashMap<String, Unit> unitMap);
-    // 自动执行的动作
+ 
 
-    // 自身状态相关方法
-    public abstract void getDamage(double damage);						// 获得伤害
-    public abstract void applyDamage();									// 结算伤害
-    public abstract void checkSelf();									// 检查自身状态
-    public boolean shouldBeDeleted() {									// 是否应当被删除
+  
+    public abstract void getDamage(double damage);						
+    public abstract void applyDamage();									
+    public abstract void checkSelf();									
+    public boolean shouldBeDeleted() {								
         return this.shouldDeleted;
     }
-    public void setDelete(boolean delete) {								// 设置是否应当被删除
+    public void setDelete(boolean delete) {								
         this.shouldDeleted = delete;
     }
 
-    // 显示相关方法
-    public abstract boolean canDisplay();								// 是否可以显示
-    public abstract String getDisplayName();							// 获得显示内容的标识
-    public abstract double getDisplayPosX();							// 获得显示时对应的游戏坐标
-    public abstract double getDisplayPosY();							// 获得显示时对应的游戏坐标
-    public abstract int getDepth();										// 获得显示时对应的深度
+
+    public abstract boolean canDisplay();							
+    public abstract String getDisplayName();						
+    public abstract double getDisplayPosX();					
+    public abstract double getDisplayPosY();							
+    public abstract int getDepth();
 
     @Override
     public abstract Object getCopy();
