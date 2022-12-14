@@ -1,15 +1,19 @@
 # FinalProject
+
 Final Project PBO 2022 Talitha Hayyinas Sahala (5025211263)
+
 Reference : https://github.com/kawaiiQ/war-of-aircrafts-java
 
 1. Casting / Conversion 
-2. Constructor
+https://github.com/Lithashl/FinalProject/blob/56a4bae2cc0804b583b46684752b4ac54a706641/src/game/data/type/unit/SmartAircraft.java#L41
+
+3. Constructor
 https://github.com/Lithashl/FinalProject/blob/a5a7b3110a6938359e393068ad69a73d83f8a677/src/main/Main.java#L7-L10
 
 3. Overloading 
-
-5.Overriding
 https://github.com/Lithashl/FinalProject/blob/276a1c6c89fdcc523c026e6313c6b3cbfb6f56d7/src/game/data/type/attr/Body.java#L81-L83
+
+4.Overriding
 
 5. Encapsulation
 https://github.com/Lithashl/FinalProject/blob/431d2ec194469faf22eadb683e44be1c51062f26/src/game/device/Display.java#L115-L141
