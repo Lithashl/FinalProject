@@ -53,7 +53,7 @@ public class ControllableAircraft extends BasicLivingUnit {
         }
 
         if(keyMap[KeyEvent.VK_S]) {
-            if((this.keyStatus & (1 << 2)) == 0) {					// 此刻之前向下未处于被按下状态
+            if((this.keyStatus & (1 << 2)) == 0) {					
                 this.keyStatus = this.keyStatus | (1 << 2);
                 this.setMovingDown();
             }
@@ -61,14 +61,14 @@ public class ControllableAircraft extends BasicLivingUnit {
             if((this.keyStatus & (1 << 2)) > 0) {
                 this.keyStatus = this.keyStatus & (~(1 << 2));
                 this.stopMovingDown();
-                if((this.keyStatus & (1 << 3)) > 0) {				// 如果当前向上处于被按下状态
+                if((this.keyStatus & (1 << 3)) > 0) {				
                     this.setMovingUp();
                 }
             }
         }
 
         if(keyMap[KeyEvent.VK_A]) {
-            if((this.keyStatus & (1 << 1)) == 0) {					// 此刻之前向左未处于被按下状态
+            if((this.keyStatus & (1 << 1)) == 0) {					
                 this.keyStatus = this.keyStatus | (1 << 1);
                 this.setMovingLeft();
             }
@@ -76,14 +76,14 @@ public class ControllableAircraft extends BasicLivingUnit {
             if((this.keyStatus & (1 << 1)) > 0) {
                 this.keyStatus = this.keyStatus & (~(1 << 1));
                 this.stopMovingLeft();
-                if((this.keyStatus & (1 << 0)) > 0) {					// 如果当前向右处于被按下状态
+                if((this.keyStatus & (1 << 0)) > 0) {					
                     this.setMovingRight();
                 }
             }
         }
 
         if(keyMap[KeyEvent.VK_D]) {
-            if((this.keyStatus & (1 << 0)) == 0) {						// 此刻之前向右未处于被按下状态
+            if((this.keyStatus & (1 << 0)) == 0) {						
                 this.keyStatus = this.keyStatus | (1 << 0);
                 this.setMovingRight();
             }
@@ -91,7 +91,7 @@ public class ControllableAircraft extends BasicLivingUnit {
             if((this.keyStatus & (1 << 0)) > 0) {
                 this.keyStatus = this.keyStatus & (~(1 << 0));
                 this.stopMovingRight();
-                if((this.keyStatus & (1 << 1)) > 0) {					// 如果当前向左处于被按下状态
+                if((this.keyStatus & (1 << 1)) > 0) {					
                     this.setMovingLeft();
                 }
             }
