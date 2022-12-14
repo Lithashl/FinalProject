@@ -106,7 +106,7 @@ public abstract class Unit implements Copy, Comparable<Unit>, Serializable {
     public abstract void initCollitionStatus();							
     public abstract boolean canDetectCollision();						
     public abstract void adjustSelf(Unit unit, HashMap<String, Unit> unitMap);
-    // 根据指定单位调整自身
+ 
     public abstract boolean collisionDetected(Unit unit);				
     public abstract void collisionHappened(Unit unit);					
 
